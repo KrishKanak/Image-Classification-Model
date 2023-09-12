@@ -3,14 +3,14 @@ import numpy as np
 from PIL import Image
 
 # Load the trained model
-model = tf.keras.models.load_model('/Users/krishkanak/IMG Class Website/saved_model')  # this can be replacable with a different image using the correct path 
+model = tf.keras.models.load_model('/Users/krishkanak/IMG Class Website/saved_model')  # this can be replaced with a different path towards a pre-trained model
 
 # Dataset labels
 class_labels = ['Airplane', 'Automobile', 'Bird', 'Cat', 'Deer',
 'Dog', 'Frog', 'Horse', 'Ship', 'Truck']
 
 # Load and preprocess the new image
-image_path = '/Users/krishkanak/Downloads/carimg.jpeg'  # this can be replacable with a different image using the correct path 
+image_path = '/Users/krishkanak/Downloads/carimg.jpeg'  # this can be replaced with a different image using the correct path 
 image = Image.open(image_path)
 
 # Ensure the image has 4 channels (RGBA)
